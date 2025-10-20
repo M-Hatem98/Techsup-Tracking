@@ -597,6 +597,42 @@ nav {
     
 }
 
+/*** Single Service Page  ***/
+
+ .plan-radio:checked + label, .scope-radio:checked + label {
+            border-color: var(--bs-info) !important;
+            background-color: #e9f0ff; /* Light blue background */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .plan-radio, .scope-radio {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Styling for the dynamically generated plan cards */
+        .plan-card-option {
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border-width: 3px;
+            border-style: solid;
+            border-color: transparent;
+        }
+        .plan-card-option:hover {
+            border-color: #adb5bd; /* gray-500 equivalent */
+        }
+        .plan-card-selected {
+            border-color: var(--bs-info) !important;
+            background-color: #e9f0ff;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .card-shadow-2xl {
+             /* Mimic aggressive shadow */
+             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+/*** Single Service Page  ***/
+
 
 /*** Footer Start ***/
 .footer {

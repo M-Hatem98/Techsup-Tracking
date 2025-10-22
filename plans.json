@@ -1,0 +1,61 @@
+{
+    "single": [
+        { 
+            "id": "single_basic", 
+            "name": "Basic Tier", 
+            "countRange": "1", 
+            "price": "$9.99/mo", 
+            "rate": 9.99, 
+            "features": ["Real-time GPS", "30-Day History"] 
+        },
+        { 
+            "id": "single_premium", 
+            "name": "Premium Tier", 
+            "countRange": "1", 
+            "price": "$14.99/mo", 
+            "rate": 14.99, 
+            "features": ["Unlimited Geofencing", "SOS Alerts"], 
+            "highlight": true 
+        }
+    ],
+    "family": [
+        { 
+            "id": "family_starter", 
+            "name": "Family Starter", 
+            "countRange": "2-5", 
+            "price": "Starts at $19.99/mo", 
+            "rate": 19.99, 
+            "perUserAddOn": 5.00, 
+            "features": ["Base for 2 users", "60-Day History"] 
+        },
+        { 
+            "id": "family_premium", 
+            "name": "Family Unlimited", 
+            "countRange": "2-5", 
+            "price": "Starts at $29.99/mo", 
+            "rate": 29.99, 
+            "perUserAddOn": 7.50, 
+            "features": ["Unlimited History", "Parental Controls"], 
+            "highlight": true 
+        }
+    ],
+    "business": [
+        { 
+            "id": "biz_team", 
+            "name": "Team Essentials", 
+            "countRange": "5+", 
+            "price": "$5/user/mo", 
+            "rate": 5.00, 
+            "features": ["Admin Dashboard", "Activity Reports"] 
+        },
+        { 
+            "id": "biz_enterprise", 
+            "name": "Enterprise", 
+            "countRange": "5+", 
+            "price": "$10/user/mo", 
+            "rate": 10.00, 
+            "features": ["Custom Integrations", "Dedicated Account Manager"], 
+            "highlight": true 
+        }
+    ]
+}

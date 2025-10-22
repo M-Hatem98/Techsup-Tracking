@@ -1,0 +1,5 @@
+[
+    { "value": "app", "cost": 0.00, "name": "Smartphone App (BYOD)" },
+    { "value": "basic", "cost": 49.99, "name": "Wearable Tracker (Basic)" },
+    { "value": "advanced", "cost": 99.99, "name": "Dedicated GPS Device (Advanced)" }
+]

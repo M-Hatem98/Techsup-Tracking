@@ -150,10 +150,9 @@ $(".header-carousel").owlCarousel({
 
 document.addEventListener("DOMContentLoaded", () => {
   const pageType =
-    document.body.dataset.type || // preferred way
+    document.body.dataset.type || 
     (window.location.pathname.match(/(\w+)-tracking/i)?.[1] || "people").toLowerCase();
 
-  console.log("Detected page type:", pageType);
 
   // Common elements
   const continueButton = document.getElementById("continue-button");
@@ -182,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
     people: { item: "Users", single: "Person", plural: "People" },
     animal: { item: "Animals", single: "Animal", plural: "Animals" },
     vehicle: { item: "Vehicles", single: "Vehicle", plural: "Vehicles" },
-    equipment: { item: "Assets", single: "Asset", plural: "Assets" },
+    equipment: { item: "Equipments", single: "Equipment", plural: "Equipments" },
   };
 
   const current = labels[pageType] || labels.people;
@@ -273,7 +272,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   <h3 class="fs-5 fw-bold text-primary">${plan.name}</h3>
                   <span class="fs-5 fw-bolder text-info">${plan.price}</span>
               </div>
-              <p class="text-sm text-secondary mb-3">${current.item}: ${plan.countRange}</p>
+              <!--<p class="text-sm text-secondary mb-3">${current.item}: ${plan.countRange}</p>-->
               <ul class="list-unstyled text-sm text-dark">${featuresHtml}</ul>
           </div>
         </div>`;
@@ -281,32 +280,51 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Step 4
+  // window.selectPlanTier = function (tierId, planKey) {
+  //   selectedTier = tierId;
+  //   document.querySelectorAll(".plan-card-option").forEach((c) => c.classList.remove("plan-card-selected"));
+  //   document.getElementById(`card-${tierId}`).classList.add("plan-card-selected");
+
+  //   resetCalculation();
+  //   configAndCostSection.classList.remove("d-none");
+
+  //   const singleLabel = current.single;
+  //   const pluralLabel = current.plural;
+
+  //   if (planKey === "single") {
+  //     Object.assign(countInput, { min: 1, max: 1, value: 1, disabled: true });
+  //     countLabel.textContent = `Number of ${pluralLabel} to Track (Fixed at 1)`;
+  //     countHelpText.textContent = `This plan supports exactly one ${singleLabel}.`;
+  //   } else if (planKey === "family") {
+  //     Object.assign(countInput, { min: 2, max: 10, value: 2, disabled: false });
+  //     countLabel.textContent = `Number of ${pluralLabel} (2–10)`;
+  //     countHelpText.textContent = `Select between 2 and 10 ${pluralLabel.toLowerCase()}.`;
+  //   } else if (planKey === "business") {
+  //     Object.assign(countInput, { min: 5, max: 999, value: 5, disabled: false });
+  //     countLabel.textContent = `Number of ${pluralLabel} (5 or more)`;
+  //     countHelpText.textContent = `Enter estimated ${pluralLabel.toLowerCase()} count (min 5).`;
+  //   }
+  //   checkContinueButton();
+  // };
+
   window.selectPlanTier = function (tierId, planKey) {
-    selectedTier = tierId;
-    document.querySelectorAll(".plan-card-option").forEach((c) => c.classList.remove("plan-card-selected"));
-    document.getElementById(`card-${tierId}`).classList.add("plan-card-selected");
+  selectedTier = tierId;
+  document.querySelectorAll(".plan-card-option").forEach((c) =>
+    c.classList.remove("plan-card-selected")
+  );
+  document.getElementById(`card-${tierId}`).classList.add("plan-card-selected");
 
-    resetCalculation();
-    configAndCostSection.classList.remove("d-none");
+  resetCalculation();
+  configAndCostSection.classList.remove("d-none");
 
-    const singleLabel = current.single;
-    const pluralLabel = current.plural;
+  // User can now freely input their desired number
+  countInput.disabled = false;
+  countInput.value = 1; // default
+  countLabel.textContent = `Enter number of ${current.plural} to track`;
+  countHelpText.textContent = `Type any number of ${current.plural.toLowerCase()} you want to include.`;
 
-    if (planKey === "single") {
-      Object.assign(countInput, { min: 1, max: 1, value: 1, disabled: true });
-      countLabel.textContent = `Number of ${pluralLabel} to Track (Fixed at 1)`;
-      countHelpText.textContent = `This plan supports exactly one ${singleLabel}.`;
-    } else if (planKey === "family") {
-      Object.assign(countInput, { min: 2, max: 10, value: 2, disabled: false });
-      countLabel.textContent = `Number of ${pluralLabel} (2–10)`;
-      countHelpText.textContent = `Select between 2 and 10 ${pluralLabel.toLowerCase()}.`;
-    } else if (planKey === "business") {
-      Object.assign(countInput, { min: 5, max: 999, value: 5, disabled: false });
-      countLabel.textContent = `Number of ${pluralLabel} (5 or more)`;
-      countHelpText.textContent = `Enter estimated ${pluralLabel.toLowerCase()} count (min 5).`;
-    }
-    checkContinueButton();
-  };
+  checkContinueButton();
+};
 
   function populateDeviceOptions() {
     deviceTypeSelect.innerHTML = "";

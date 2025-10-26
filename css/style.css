@@ -626,11 +626,11 @@ nav {
             cursor: pointer;
             border-width: 3px;
             border-style: solid;
-            border-color: transparent;
+            border-color: #adb5bd;
             height: 100%; 
         }
         .plan-card-option:hover {
-            border-color: #adb5bd; 
+            border-color: #F99F00; 
         }
         .plan-card-selected {
             border-color: var(--bs-info) !important;

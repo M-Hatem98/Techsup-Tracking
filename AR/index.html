@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Techsup Trackin</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="نظام تتبع ذكي للأشخاص والمركبات والحيوانات والمعدات"
+      name="description"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="../lib/animate/animate.min.css" />
+    <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link
+      href="../lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main Style -->
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/style-rtl.css" rel="stylesheet" />
+
+    <link rel="icon" href="../img/favicon.ico" />
+  </head>
+
+  <body style="font-family: 'Tajawal', sans-serif">
+    <!-- Spinner -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      ></div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="container-fluid nav position-relative p-0">
+      <nav
+        class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+      >
+        <a href="index.html" class="navbar-brand p-0">
+          <img src="../img/logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav me-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">الرئيسية</a>
+            <a href="about.html" class="nav-item nav-link">من نحن</a>
+            <a href="service.html" class="nav-item nav-link">الخدمات</a>
+            <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle">المنتجات</span>
+              </a>
+              <div class="dropdown-menu m-0 text-end">
+                <a href="people tracking.html" class="dropdown-item"
+                  >تتبع الأشخاص</a
+                >
+                <a href="animal tracking.html" class="dropdown-item"
+                  >تتبع الحيوانات</a
+                >
+                <a href="vehicle tracking.html" class="dropdown-item"
+                  >تتبع المركبات</a
+                >
+                <a href="equipment tracking.html" class="dropdown-item"
+                  >تتبع المعدات</a
+                >
+              </div>
+            </div>
+            <a href="../index.html" class="nav-item nav-link"
+              ><img src="../img/en.svg" alt="English"
+            /></a>
+          </div>
+          <a
+            href="#"
+            class="btn btn-primary rounded-pill py-2 px-4 my-3 me-5 my-lg-0 flex-shrink-0"
+            >تسجيل الدخول</a
+          >
+        </div>
+      </nav>
+
+      <!-- Carousel -->
+      <div class="header-carousel owl-carousel">
+        <div class="header-carousel-item active">
+          <img
+            src="../img/People Tracking.jpeg"
+            class="img-fluid hero-img w-100"
+            alt="تتبع الأشخاص"
+          />
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="col-12 animated fadeInUp text-center">
+                <h4 class="text-primary fw-bold mb-4">تتبع الأشخاص</h4>
+                <h4 class="display-7 text-white mb-4">
+                  ابقَ على اتصال دائم مع من تحب من خلال تتبع لحظي للموقع
+                  وتنبيهات ذكية تضمن الأمان وراحة البال.
+                </h4>
+                <a class="btn btn-primary rounded-pill py-3 px-5" href="#"
+                  >اشترك الآن</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-carousel-item">
+          <img
+            src="../img/pet teacking.jpg"
+            class="img-fluid hero-img w-100"
+            alt="تتبع الحيوانات"
+          />
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="col-12 animated fadeInUp text-center">
+                <h4 class="text-primary fw-bold mb-4">تتبع الحيوانات</h4>
+                <h4 class="display-7 text-white mb-4">
+                  راقب حركة حيواناتك لحظة بلحظة مع تنبيهات فورية عند خروجها من
+                  نطاق الأمان أو توقفها المفاجئ.
+                </h4>
+                <a class="btn btn-primary rounded-pill py-3 px-5" href="#"
+                  >اشترك الآن</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-carousel-item">
+          <img
+            src="../img/Vehicle Tracking.jpg"
+            class="img-fluid hero-img w-100"
+            alt="تتبع المركبات"
+          />
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="col-12 animated fadeInUp text-center">
+                <h4 class="text-primary fw-bold mb-4">تتبع المركبات</h4>
+                <h4 class="display-7 text-white mb-4">
+                  تتبع مركباتك بدقة في الوقت الفعلي، وتلقَّ تنبيهات حول السرعة
+                  والموقع والتحركات غير المصرح بها.
+                </h4>
+                <a class="btn btn-primary rounded-pill py-3 px-5" href="#"
+                  >اشترك الآن</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-carousel-item">
+          <img
+            src="../img/Equipment Tracking.webp"
+            class="img-fluid hero-img w-100"
+            alt="تتبع المعدات"
+          />
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="col-12 animated fadeInUp text-center">
+                <h4 class="text-primary fw-bold mb-4">تتبع المعدات</h4>
+                <h4 class="display-7 text-white mb-4">
+                  راقب حالة وموقع معداتك في الوقت الفعلي لتقليل الفاقد وتحسين
+                  الكفاءة التشغيلية.
+                </h4>
+                <a class="btn btn-primary rounded-pill py-3 px-5" href="#"
+                  >اشترك الآن</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5 overflow-hidden contact-section">
+      <div class="row text-center">
+        <div
+          class="mb-md-4 col-md-6 col-lg-4 col-xl-3 wow fadeInRight"
+          data-wow-delay="0.2s"
+        >
+          <a href="people-tracking.html">
+            <div class="card contact-card p-3">
+              <img
+                src="../img/People Tracking icon.png"
+                width="60px"
+                alt="تتبع الأشخاص"
+              />
+              <p class="text-not-primary">تتبع الأشخاص</p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="mb-md-4 col-md-6 col-lg-4 col-xl-3 wow fadeInRight"
+          data-wow-delay="0.2s"
+        >
+          <a href="animal-tracking.html">
+            <div class="card contact-card p-3">
+              <img
+                src="../img/Animal_Tracking_icon.png"
+                width="60px"
+                alt="تتبع الحيوانات"
+              />
+              <p class="text-not-primary">تتبع الحيوانات</p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="mb-md-4 col-md-6 col-lg-4 col-xl-3 wow fadeInLeft"
+          data-wow-delay="0.2s"
+        >
+          <a href="vehicle-tracking.html">
+            <div class="card contact-card p-3">
+              <img
+                src="../img/Vehicle_Tracking_icon.png"
+                width="60px"
+                alt="تتبع المركبات"
+              />
+              <p class="text-not-primary">تتبع المركبات</p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="mb-md-4 col-md-6 col-lg-4 col-xl-3 wow fadeInLeft"
+          data-wow-delay="0.2s"
+        >
+          <a href="equipment-tracking.html">
+            <div class="card contact-card p-3">
+              <img
+                src="../img/Equipment_Tracking_icon.png"
+                width="60px"
+                alt="تتبع المعدات"
+              />
+              <p class="text-not-primary">تتبع المعدات</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="container-fluid overflow-hidden service pb-5">
+      <div class="container pb-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">خدماتنا</h4>
+          <h2 class="text-not-primary display-5 mb-4">
+            خدمات عالية الأداء لقطاعات متعددة
+          </h2>
+          <p class="mb-0">
+            حلول ذكية تجمع بين الدقة، الأمان، وسهولة الاستخدام.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="../img/Services 1.svg"
+                  class="img-fluid rounded-top w-100"
+                  alt="تتبع لحظي"
+                />
+              </div>
+              <div class="rounded-bottom p-4">
+                <p class="h4 text-not-primary mb-4">تتبع لحظي</p>
+                <p>
+                  تابع موقع أصولك لحظة بلحظة على خريطة تفاعلية تمنحك رؤية كاملة
+                  في أي وقت ومن أي مكان.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="../img/Services 2.svg"
+                  class="img-fluid rounded-top w-100"
+                  alt="تنبيهات فورية"
+                />
+              </div>
+              <div class="rounded-bottom p-4">
+                <p class="h4 text-not-primary mb-4">تنبيهات فورية</p>
+                <p>
+                  احصل على إشعارات لحظية عند حدوث أي نشاط غير معتاد أو خروج أصل
+                  من نطاقه المحدد مسبقًا.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="../img/Services 3.svg"
+                  class="img-fluid rounded-top w-100"
+                  alt="تقارير دقيقة"
+                />
+              </div>
+              <div class="rounded-bottom p-4">
+                <p class="h4 text-not-primary mb-4">تقارير وتحليلات دقيقة</p>
+                <p>
+                  استعرض السجل الكامل للحركات وساعات التشغيل لتقييم الأداء
+                  وتحسين الكفاءة التشغيلية.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="../img/Services 4.svg"
+                  class="img-fluid rounded-top w-100"
+                  alt="تحكم كامل وأمان"
+                />
+              </div>
+              <div class="rounded-bottom p-4">
+                <p class="h4 text-not-primary mb-4">تحكم كامل وأمان متقدم</p>
+                <p>
+                  نظام متطور يمنحك سيطرة لحظية كاملة مع أعلى معايير الأمان
+                  لحماية بياناتك وأصولك.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="../img/Services 5.svg"
+                  class="img-fluid rounded-top w-100"
+                  alt="واجهة ذكية"
+                />
+              </div>
+              <div class="rounded-bottom p-4">
+                <p class="h4 text-not-primary mb-4">
+                  واجهة ذكية وسهلة الاستخدام
+                </p>
+                <p>
+                  نظام بواجهة بسيطة تمنحك تجربة استخدام مريحة وسريعة دون الحاجة
+                  لأي خبرة تقنية مسبقة.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-item">
+              <div class="service-img">
+                <img
+                  src="../img/Services 6.svg"
+                  class="img-fluid rounded-top w-100"
+                  alt="تحسين الموارد"
+                />
+              </div>
+              <div class="rounded-bottom p-4">
+                <p class="h4 text-not-primary mb-4">تحسين إدارة الموارد</p>
+                <p>
+                  قلل من تكاليف التشغيل والوقت الضائع من خلال توزيع أفضل للأصول
+                  وتحسين الأداء العام.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Start -->
+    <div class="container-fluid overflow-hidden feature py-5 bg-light">
+      <div class="container pb-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h2 class="text-not-primary display-5 mb-4">كيف يعمل نظامنا</h2>
+          <p class="mb-0">خطوات بسيطة، أداء قوي، ونتائج فورية</p>
+        </div>
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div class="feature-item p-4">
+              <div class="feature-icon py-2 px-4 mb-4">
+                <p class="display-5 text-not-primary m-0">1</p>
+              </div>
+              <h4 class="text-primary">تثبيت الجهاز</h4>
+              <p>
+                قم بربط جهاز التتبع بالموقع أو الأصل المطلوب سواء كان شخصًا أو
+                مركبة أو حيوانًا.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.6s"
+          >
+            <div class="feature-item p-4">
+              <div class="feature-icon py-2 px-4 mb-4">
+                <p class="display-5 text-not-primary m-0">2</p>
+              </div>
+              <h4 class="text-primary">الاتصال بالتطبيق</h4>
+              <p>
+                قم بربط الجهاز بتطبيقنا عبر البلوتوث أو شبكة الإنترنت بسهولة.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="feature-item p-4">
+              <div class="feature-icon py-2 px-4 mb-4">
+                <p class="display-5 text-not-primary m-0">3</p>
+              </div>
+              <h4 class="text-primary">ابدأ التتبع</h4>
+              <p>
+                تابع الموقع الجغرافي في الوقت الفعلي واستقبل الإشعارات مباشرة
+                على هاتفك.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Partner Start -->
+    <div class="container-fluid overflow-hidden about py-5">
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+            <div>
+              <h2 class="text-primary display-5 mb-4">شركاؤنا حول العالم</h2>
+              <p class="mb-4">
+                أكثر من <strong>1200</strong> شركة في
+                <strong>25 دولة</strong> تعتمد على
+                <strong>Techsup Tracking</strong> لمراقبة وتأمين أكثر من
+                <strong>50,000</strong> أصل ثمين.
+              </p>
+              <p class="mb-4">
+                منصتنا الذكية وخدماتنا المتميزة تمنح الشركات القدرة على تحسين
+                الأداء، تعزيز الأمان، وضمان راحة البال الكاملة.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.4s">
+            <div class="rounded position-relative overflow-hidden">
+              <img
+                src="../img/map.svg"
+                class="img-fluid rounded w-100"
+                alt="خريطة شركاؤنا"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Start -->
+    <div class="container-fluid overflow-hidden offer-section py-5 bg-light">
+      <div class="container pb-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary">عن Techsup Tracking</h4>
+          <h1 class="display-5 mb-4">من نحن وماذا نهدف إليه</h1>
+          <p class="mb-0">
+            تعرّف على رؤيتنا ورسالتنا وقيمنا التي تقود الابتكار والثقة في عالم
+            تتبع الأصول.
+          </p>
+        </div>
+
+        <div class="row g-5 align-items-center">
+          <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="nav nav-pills bg-white rounded p-5">
+              <a
+                class="accordion-link p-4 active mb-4"
+                data-bs-toggle="pill"
+                href="#about"
+              >
+                <h5 class="mb-0">من نحن</h5>
+              </a>
+              <a
+                class="accordion-link p-4 mb-4"
+                data-bs-toggle="pill"
+                href="#mission"
+              >
+                <h5 class="mb-0">الرسالة</h5>
+              </a>
+              <a
+                class="accordion-link p-4 mb-4"
+                data-bs-toggle="pill"
+                href="#vision"
+              >
+                <h5 class="mb-0">الرؤية</h5>
+              </a>
+              <a
+                class="accordion-link p-4 mb-0"
+                data-bs-toggle="pill"
+                href="#values"
+              >
+                <h5 class="mb-0">القيم</h5>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.4s">
+            <div class="tab-content">
+              <div id="about" class="tab-pane fade show active p-0">
+                <div class="p-4">
+                  <h2 class="display-6 mb-3 text-not-primary">من نحن</h2>
+                  <p>
+                    في عالم يتحرك بسرعة غير مسبوقة، أصبح التواصل مع الأصول
+                    والأشخاص ذوي الأهمية القصوى أكثر ضرورة من أي وقت مضى.
+                  </p>
+                  <p>
+                    تأسست <strong>Techsup Tracking</strong> لتسد هذه الفجوة. نحن
+                    فريق من خبراء التقنية والمبدعين نهدف إلى تقديم نظام تتبع ذكي
+                    ومتكامل يوفّر دقة وتحكم لا مثيل لهما.
+                  </p>
+                </div>
+              </div>
+
+              <div id="mission" class="tab-pane fade p-0">
+                <div class="p-4">
+                  <h2 class="display-6 mb-3 text-not-primary">رسالتنا</h2>
+                  <p>
+                    تمكين عملائنا من خلال منصة تتبع قوية وسهلة الاستخدام توفر
+                    بيانات دقيقة وتنبيهات لحظية لحماية الأصول وضمان السلامة في
+                    أي وقت ومن أي مكان.
+                  </p>
+                </div>
+              </div>
+
+              <div id="vision" class="tab-pane fade p-0">
+                <div class="p-4">
+                  <h2 class="display-6 mb-3 text-not-primary">رؤيتنا</h2>
+                  <p>
+                    نسعى إلى عالم تتحول فيه المسافات إلى روابط وثقة، حيث تجعل
+                    التكنولوجيا الذكية كل أصل آمن وكل عملية أكثر كفاءة.
+                  </p>
+                </div>
+              </div>
+
+              <div id="values" class="tab-pane fade p-0">
+                <div class="p-4">
+                  <h2 class="display-6 mb-3 text-not-primary">قيمنا</h2>
+                  <p>
+                    قيمنا هي الأساس الذي يُبنى عليه كل قرار نتخذه وكل خدمة
+                    نقدّمها. وهي جوهر التزامنا نحو عملائنا.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong class="text-not-primary">الاعتمادية:</strong>
+                      نبني أنظمة موثوقة ودقيقة تضمن أفضل أداء.
+                    </li>
+                    <li>
+                      <strong class="text-not-primary">الابتكار:</strong>
+                      نبحث دائمًا عن التقنيات الحديثة لنرتقي بخدماتنا.
+                    </li>
+                    <li>
+                      <strong class="text-not-primary">السهولة:</strong>
+                      نؤمن أن التقنية يجب أن تكون بسيطة وواضحة وسهلة للجميع.
+                    </li>
+                    <li>
+                      <strong class="text-not-primary">النزاهة:</strong>
+                      نلتزم بالشفافية والأمان التام في حماية بيانات عملائنا.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Start -->
+    <div class="go-to-contact overflow-hidden container-fluid">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-8 col-lg-8 col-md-8 wow fadeInRight">
+            <h2>تواصل معنا لأي استفسار أو اقتراح.</h2>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInLeft text-end">
+            <a
+              class="btn btn-primary rounded-pill py-3 px-4 px-md-5"
+              href="contact.html"
+              >اتصل بنا</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div
+      class="container-fluid overflow-hidden footer pt-5 wow fadeIn"
+      data-wow-delay="0.2s"
+    >
+      <div
+        class="container py-5 border-start-0 border-end-0"
+        style="border: 1px solid rgba(255, 255, 255, 0.08)"
+      >
+        <div class="row g-5 text-md-end">
+          <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp">
+            <div class="footer-item">
+              <img src="../img/logo.png" width="150px" alt="شعار الشركة" />
+              <div class="d-flex align-items-center mt-2">
+                <i class="fa fa-phone-alt text-primary ms-3"></i>
+                <p class="text-white mb-0">+966 920015409</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-envelope text-primary ms-3"></i>
+                <p class="text-white mb-0">info@techsupbusiness.com</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-map-marker-alt text-primary ms-3"></i>
+                <p class="text-white mb-0">
+                  12 سيركون - الطابق الرابع - المكتب رقم 403، شارع العليا،
+                  الرياض، المملكة العربية السعودية.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp">
+            <div class="footer-item">
+              <h4 class="text-white mb-4">خدماتنا</h4>
+              <a href="people-tracking.html"
+                ><i class="fas fa-angle-left ms-2"></i> تتبع الأشخاص</a
+              >
+              <a href="animal-tracking.html"
+                ><i class="fas fa-angle-left ms-2"></i> تتبع الحيوانات</a
+              >
+              <a href="vehicle-tracking.html"
+                ><i class="fas fa-angle-left ms-2"></i> تتبع المركبات</a
+              >
+              <a href="equipment-tracking.html"
+                ><i class="fas fa-angle-left ms-2"></i> تتبع المعدات</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp">
+            <div class="footer-item">
+              <h4 class="text-white mb-4">روابط مهمة</h4>
+              <a href="about.html"
+                ><i class="fas fa-angle-left ms-2"></i> من نحن</a
+              >
+              <a href="contact.html"
+                ><i class="fas fa-angle-left ms-2"></i> تواصل معنا</a
+              >
+              <a href="#"
+                ><i class="fas fa-angle-left ms-2"></i> سياسة الخصوصية</a
+              >
+              <a href="#"
+                ><i class="fas fa-angle-left ms-2"></i> شروط الاستخدام</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp">
+            <div class="footer-item">
+              <h4 class="text-white mb-4">تابعنا على مواقع التواصل</h4>
+              <div class="d-flex justify-content-md-start">
+                <a
+                  class="btn btn-primary text-white btn-sm-square rounded-circle ms-3"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-primary text-white btn-sm-square rounded-circle ms-3"
+                  href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-primary text-white btn-sm-square rounded-circle ms-3"
+                  href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-primary text-white btn-sm-square rounded-circle ms-3"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom pt-3">
+        <div class="text-center">
+          <p class="mb-0 text-white">
+            جميع الحقوق محفوظة لـ © Techsup Tracking
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- Floating Social Toggle Button -->
+    <div class="social-toggle" id="socialToggle">
+      <i class="fas fa-share-alt"></i>
+    </div>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar hidden" id="socialSidebar">
+      <ul>
+        <li>
+          <a class="btn btn-primary" href="#" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a class="btn btn-primary" href="#" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a class="btn btn-primary" href="#" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a class="btn btn-primary" href="#" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a class="btn btn-primary" href="#" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -26,23 +26,26 @@
 
 
     // Hero Header carousel
-    $(".header-carousel").owlCarousel({
-        animateOut: 'fadeOut',
-        items: 1,
-        margin: 0,
-        stagePadding: 0,
-        autoplay: true,
-        smartSpeed: 500,
-        dots: true,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-    });
+ const isRTL = document.documentElement.dir === "rtl";
+
+$(".header-carousel").owlCarousel({
+    animateOut: 'fadeOut',
+    items: 1,
+    margin: 0,
+    stagePadding: 0,
+    autoplay: true,
+    smartSpeed: 500,
+    dots: true,
+    loop: true,
+    rtl: isRTL,
+    nav: true,
+    navText: isRTL
+        ? ['<i class="bi bi-arrow-right"></i>', '<i class="bi bi-arrow-left"></i>']
+        : ['<i class="bi bi-arrow-left"></i>', '<i class="bi bi-arrow-right"></i>']
+});
 
 
+  
     // attractions carousel
     $(".blog-carousel").owlCarousel({
         autoplay: true,

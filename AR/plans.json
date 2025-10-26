@@ -1,0 +1,61 @@
+{
+  "single": [
+    { 
+      "id": "single_basic", 
+      "name": "الباقة الأساسية", 
+      "countRange": "1", 
+      "price": "9.99 دولار / شهريًا", 
+      "rate": 9.99, 
+      "features": ["تتبع الموقع في الوقت الفعلي", "سجل لمدة 30 يومًا"] 
+    },
+    { 
+      "id": "single_premium", 
+      "name": "الباقة المميزة", 
+      "countRange": "1", 
+      "price": "14.99 دولار / شهريًا", 
+      "rate": 14.99, 
+      "features": ["تحديد مناطق غير محدودة (Geofencing)", "تنبيهات الطوارئ (SOS)"], 
+      "highlight": true 
+    }
+  ],
+  "family": [
+    { 
+      "id": "family_starter", 
+      "name": "باقة العائلة المبدئية", 
+      "countRange": "2-5", 
+      "price": "تبدأ من 19.99 دولار / شهريًا", 
+      "rate": 19.99, 
+      "perUserAddOn": 5.00, 
+      "features": ["تشمل مستخدمين اثنين", "سجل لمدة 60 يومًا"] 
+    },
+    { 
+      "id": "family_premium", 
+      "name": "باقة العائلة غير المحدودة", 
+      "countRange": "2-5", 
+      "price": "تبدأ من 29.99 دولار / شهريًا", 
+      "rate": 29.99, 
+      "perUserAddOn": 7.50, 
+      "features": ["سجل غير محدود", "ضوابط أبوية متقدمة"], 
+      "highlight": true 
+    }
+  ],
+  "business": [
+    { 
+      "id": "biz_team", 
+      "name": "باقة الفرق الأساسية", 
+      "countRange": "5+", 
+      "price": "5 دولار / لكل مستخدم / شهريًا", 
+      "rate": 5.00, 
+      "features": ["لوحة تحكم إدارية", "تقارير النشاط"] 
+    },
+    { 
+      "id": "biz_enterprise", 
+      "name": "باقة المؤسسات", 
+      "countRange": "5+", 
+      "price": "10 دولارات / لكل مستخدم / شهريًا", 
+      "rate": 10.00, 
+      "features": ["تكاملات مخصصة", "مدير حساب مخصص"], 
+      "highlight": true 
+    }
+  ]
+}

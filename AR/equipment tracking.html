@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <title>Techsup Tracking تتبع المعدات</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="../css/style.css" rel="stylesheet">
+
+  <!-- FavIcon -->
+  <link rel="icon" href="../img/favicon.ico" />
+</head>
+
+<body data-type="equipment">
+
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">جارٍ التحميل...</span>
+    </div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar & Hero Start -->
+  <div class="container-fluid position-relative p-0">
+ <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+          <img src="../img/logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav me-auto py-0">
+            <a href="index.html" class="nav-item nav-link">الرئيسية</a>
+            <a href="about.html" class="nav-item nav-link">من نحن</a>
+            <a href="service.html" class="nav-item nav-link">الخدمات</a>
+            <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link active" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle">المنتجات</span>
+              </a>
+              <div class="dropdown-menu m-0 text-end">
+                <a href="people tracking.html" class="dropdown-item">تتبع الأشخاص</a>
+                <a href="animal tracking.html" class="dropdown-item">تتبع الحيوانات</a>
+                <a href="vehicle tracking.html" class="dropdown-item">تتبع المركبات</a>
+                <a href="equipment tracking.html" class="dropdown-item active">تتبع المعدات</a>
+              </div>
+            </div>
+          <a href="../equipment tracking.html" class="nav-item nav-link"><img src="../img/en.svg" alt="English"></a>
+          </div>
+          <a href="#" class="btn btn-primary rounded-pill py-2 px-4 my-3 me-5 my-lg-0 flex-shrink-0">تسجيل الدخول</a>
+        </div>
+      </nav>
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+      <div class="container text-center py-5" style="max-width: 900px;">
+        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">تتبع المعدات</h4>
+        <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+          <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+          <li class="breadcrumb-item active text-primary">تتبع المعدات</li>
+        </ol>
+      </div>
+    </div>
+    <!-- Header End -->
+  </div>
+  <!-- Navbar & Hero End -->
+
+  <!-- Main Container -->
+  <div class="container my-5 wow fadeIn">
+    <div id="app-container" class="card p-4 p-md-5 rounded-4 card-shadow-2xl border-0">
+
+      <!-- Loading Indicator -->
+      <div id="loading-spinner" class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">جارٍ تحميل البيانات...</span>
+        </div>
+        <p class="mt-3 text-secondary">جارٍ تحميل بيانات التسعير...</p>
+      </div>
+
+      <!-- Application Content -->
+      <div id="app-content" class="d-none">
+        <!-- Header -->
+        <header class="text-center mx-auto pb-5 wow fadeInUp overflow-hidden" data-wow-delay="0.2s"
+          style="max-width: 800px">
+          <h4 class="text-primary fw-semibold mb-2">احمِ أصولك</h4>
+          <h1 class="display-5 fw-bold mb-4">خدمات تتبع المعدات</h1>
+          <p class="lead mb-0 text-secondary">
+            اختر نوع الاشتراك الذي يناسب احتياجاتك.
+          </p>
+        </header>
+
+        <!-- Step 1 -->
+        <div id="step-1" class="space-y-3 mb-4 wow fadeInLeft">
+          <h2 class="fs-5 fw-semibold text-dark border-bottom pb-2 mb-3">1. اختر نوع الخطة الأساسية</h2>
+          <div class="row g-3">
+            <!-- Personal -->
+            <div class="col-12 col-md-6">
+              <input type="radio" id="individual" name="plan_type" value="individual" class="plan-radio"
+                onchange="handlePlanSelection('individual')">
+              <label for="individual"
+                class="d-flex align-items-center p-3 border border-2 rounded-3 transition-all duration-200 border-secondary-subtle hover:border-info cursor-pointer radio-label-wrapper step-1-card-label">
+                <div class="flex-shrink-0 me-3">
+                  <i class="fas fa-truck-monster text-not-primary" style="font-size: 2.5rem;"></i>
+                </div>
+                <div><span class="fs-4 fw-bolder text-dark">تتبع المعدات الشخصية</span>
+                  <p class="text-sm text-secondary mb-0">للأدوات والمعدات الشخصية أو المجموعات الصغيرة (1-10 أصول).</p>
+                </div>
+              </label>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="col-12 col-md-6">
+              <input type="radio" id="business" name="plan_type" value="business" class="plan-radio"
+                onchange="handlePlanSelection('business')">
+              <label for="business"
+                class="d-flex align-items-center p-3 border border-2 rounded-3 transition-all duration-200 border-secondary-subtle hover:border-info cursor-pointer radio-label-wrapper step-1-card-label">
+                <div class="flex-shrink-0 me-3">
+                  <i class="fas fa-warehouse text-not-primary" style="font-size: 2.5rem;"></i>
+                </div>
+                <div><span class="fs-4 fw-bolder text-dark">تتبع أصول الشركات / مواقع البناء</span>
+                  <p class="text-sm text-secondary mb-0">لمراقبة المعدات والآلات أو المخزون الكبير (أكثر من 10 أصول).</p>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div id="scope-selection-section"
+          class="space-y-3 pt-3 border-top border-secondary-subtle d-none">
+          <h2 class="fs-5 fw-semibold text-dark border-bottom pb-2">2. حدد نطاق الأصل</h2>
+          <p class="text-secondary mb-3">هل هذا لجهاز واحد أم لمجموعة صغيرة؟</p>
+          <div class="row g-3">
+            <div class="col-6">
+              <input type="radio" id="scope_single" name="scope_type" value="single" class="scope-radio"
+                onchange="handleScopeSelection('single')">
+              <label for="scope_single"
+                class="text-center p-3 border border-2 rounded-3 transition-all duration-200 border-secondary-subtle hover:border-info cursor-pointer d-block radio-label-wrapper">
+                <span class="d-block fw-bold">أصل واحد</span>
+                <span class="text-sm text-secondary">(أصل واحد فقط)</span>
+              </label>
+            </div>
+            <div class="col-6">
+              <input type="radio" id="scope_family" name="scope_type" value="family" class="scope-radio"
+                onchange="handleScopeSelection('family')">
+              <label for="scope_family"
+                class="text-center p-3 border border-2 rounded-3 transition-all duration-200 border-secondary-subtle hover:border-info cursor-pointer d-block radio-label-wrapper">
+                <span class="d-block fw-bold">مجموعة صغيرة</span>
+                <span class="text-sm text-secondary">(من 2 إلى 10 أصول)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div id="plan-selection-section"
+          class="space-y-3 pt-4 border-top border-secondary-subtle mt-4 d-none">
+          <h2 class="fs-5 fw-semibold text-dark border-bottom pb-2" id="plan-selection-title">3. اختر فئة الخطة</h2>
+          <div id="plan-cards-container" class="row g-4"></div>
+        </div>
+
+        <!-- Step 4 -->
+        <div id="config-and-cost-section"
+          class="space-y-4 pt-4 border-top border-secondary-subtle mt-4 d-none">
+          <h2 class="fs-5 fw-semibold text-dark border-bottom pb-2">4. إعداد الجهاز وحساب التكلفة</h2>
+
+          <div id="count-input-container">
+            <label for="user-count" class="form-label mb-2 fw-medium text-dark" id="count-label">عدد الأصول التي سيتم
+              تتبعها</label>
+            <input type="number" id="user-count" min="1" value="1" oninput="resetCalculation()" class="form-control p-3"
+              required>
+            <p class="form-text mt-2 text-secondary" id="count-help-text"></p>
+          </div>
+
+          <div>
+            <label for="device-type" class="form-label mb-2 fw-medium text-dark">اختر نوع الجهاز</label>
+            <select id="device-type" onchange="resetCalculation()" class="form-select p-3">
+            </select>
+            <p class="form-text mt-2 text-secondary">اختر جهاز تعقب يعمل بالبطارية أو علامة أصول صناعية.</p>
+          </div>
+
+          <button onclick="calculateCost()" id="calculate-btn"
+            class="btn btn-warning w-100 py-3 fw-bold text-dark shadow-sm">
+            احسب التكلفة النهائية
+          </button>
+
+          <div id="cost-output" class="p-3 bg-light rounded-3 d-none">
+            <h3 class="fs-5 fw-bold text-dark border-bottom pb-2 mb-2">تكلفتك التقديرية:</h3>
+            <div class="list-group list-group-flush">
+              <div class="list-group-item d-flex justify-content-between align-items-center bg-light px-0">
+                <span class="fw-medium text-dark">الاشتراك الشهري:</span>
+                <span id="monthly-cost" class="fw-bold text-primary">$0.00</span>
+              </div>
+              <div class="list-group-item d-flex justify-content-between align-items-center bg-light px-0">
+                <span class="fw-medium text-dark">تكلفة الأجهزة لمرة واحدة:</span>
+                <span id="hardware-cost" class="fw-bold text-primary">$0.00</span>
+              </div>
+              <div class="list-group-item d-flex justify-content-between align-items-center bg-light px-0 pt-3">
+                <span class="fs-5 fw-bolder text-dark">المجموع المستحق اليوم:</span>
+                <span id="total-cost" class="fs-5 fw-bolder text-info">$0.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div
+          class="mt-4 pt-3 border-top border-secondary-subtle d-flex flex-column flex-sm-row justify-content-end gap-3">
+          <button onclick="goToHome()" class="btn btn-light border w-100 w-sm-auto px-4 py-2 fw-semibold shadow-sm">
+            العودة إلى الرئيسية
+          </button>
+          <button id="continue-button" disabled
+            class="btn btn-secondary w-100 w-sm-auto px-4 py-2 fw-semibold shadow-sm">
+            المتابعة لتسجيل الدخول / إنشاء حساب
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Footer -->
+    <div
+      class="container-fluid overflow-hidden footer pt-5 wow fadeIn"
+      data-wow-delay="0.2s"
+    >
+      <div
+        class="container py-5 border-start-0 border-end-0"
+        style="border: 1px solid rgba(255, 255, 255, 0.08)"
+      >
+        <div class="row g-5 text-md-end">
+          <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp">
+            <div class="footer-item">
+              <img src="../img/logo.png" width="150px" alt="شعار الشركة" />
+              <div class="d-flex align-items-center mt-2">
+                <i class="fa fa-phone-alt text-primary ms-3"></i>
+                <p class="text-white mb-0">+966 920015409</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-envelope text-primary ms-3"></i>
+                <p class="text-white mb-0">info@techsupbusiness.com</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-map-marker-alt text-primary ms-3"></i>
+                <p class="text-white mb-0">
+                  12 سيركون - الطابق الرابع - المكتب رقم 403، شارع العليا،
+                  الرياض، المملكة العربية السعودية.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp">
+            <div class="footer-item">
+              <h4 class="text-white mb-4">خدماتنا</h4>
+              <a href="people-tracking.html"
+                ><i class="fas fa-angle-left ms-2"></i> تتبع الأشخاص</a
+              >
+              <a href="animal-tracking.html"
+                ><i class="fas fa-angle-left ms-2"></i> تتبع الحيوانات</a
+              >
+              <a href="vehicle-tracking.html"
+                ><i class="fas fa-angle-left ms-2"></i> تتبع المركبات</a
+              >
+              <a href="equipment-tracking.html"
+                ><i class="fas fa-angle-left ms-2"></i> تتبع المعدات</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp">
+            <div class="footer-item">
+              <h4 class="text-white mb-4">روابط مهمة</h4>
+              <a href="about.html"
+                ><i class="fas fa-angle-left ms-2"></i> من نحن</a
+              >
+              <a href="contact.html"
+                ><i class="fas fa-angle-left ms-2"></i> تواصل معنا</a
+              >
+              <a href="#"
+                ><i class="fas fa-angle-left ms-2"></i> سياسة الخصوصية</a
+              >
+              <a href="#"
+                ><i class="fas fa-angle-left ms-2"></i> شروط الاستخدام</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp">
+            <div class="footer-item">
+              <h4 class="text-white mb-4">تابعنا على مواقع التواصل</h4>
+              <div class="d-flex justify-content-md-start">
+                <a
+                  class="btn btn-primary text-white btn-sm-square rounded-circle ms-3"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-primary text-white btn-sm-square rounded-circle ms-3"
+                  href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-primary text-white btn-sm-square rounded-circle ms-3"
+                  href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-primary text-white btn-sm-square rounded-circle ms-3"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom pt-3">
+        <div class="text-center">
+          <p class="mb-0 text-white">
+            جميع الحقوق محفوظة لـ © Techsup Tracking
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+  
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+<!-- Floating Social Toggle Button -->
+<div class="social-toggle" id="socialToggle">
+  <i class="fas fa-share-alt"></i>
+</div>
+
+<!-- Social Sidebar -->
+<div class="social-sidebar hidden" id="socialSidebar">
+  <ul>
+    <li><a class="btn btn-primary" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a class="btn btn-primary" href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    <li><a class="btn btn-primary" href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li><a class="btn btn-primary" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+    <li><a class="btn btn-primary" href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+  </ul>
+</div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../lib/wow/wow.min.js"></script>
+        <script src="../lib/easing/easing.min.js"></script>
+        <script src="../lib/waypoints/waypoints.min.js"></script>
+        <script src="../lib/counterup/counterup.min.js"></script>
+        <script src="../lib/lightbox/js/lightbox.min.js"></script>
+        <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="../js/main.js"></script>
+    </body>
+
+</html>

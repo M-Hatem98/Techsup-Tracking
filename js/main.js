@@ -280,32 +280,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Step 4
-  // window.selectPlanTier = function (tierId, planKey) {
-  //   selectedTier = tierId;
-  //   document.querySelectorAll(".plan-card-option").forEach((c) => c.classList.remove("plan-card-selected"));
-  //   document.getElementById(`card-${tierId}`).classList.add("plan-card-selected");
-
-  //   resetCalculation();
-  //   configAndCostSection.classList.remove("d-none");
-
-  //   const singleLabel = current.single;
-  //   const pluralLabel = current.plural;
-
-  //   if (planKey === "single") {
-  //     Object.assign(countInput, { min: 1, max: 1, value: 1, disabled: true });
-  //     countLabel.textContent = `Number of ${pluralLabel} to Track (Fixed at 1)`;
-  //     countHelpText.textContent = `This plan supports exactly one ${singleLabel}.`;
-  //   } else if (planKey === "family") {
-  //     Object.assign(countInput, { min: 2, max: 10, value: 2, disabled: false });
-  //     countLabel.textContent = `Number of ${pluralLabel} (2–10)`;
-  //     countHelpText.textContent = `Select between 2 and 10 ${pluralLabel.toLowerCase()}.`;
-  //   } else if (planKey === "business") {
-  //     Object.assign(countInput, { min: 5, max: 999, value: 5, disabled: false });
-  //     countLabel.textContent = `Number of ${pluralLabel} (5 or more)`;
-  //     countHelpText.textContent = `Enter estimated ${pluralLabel.toLowerCase()} count (min 5).`;
-  //   }
-  //   checkContinueButton();
-  // };
 
   window.selectPlanTier = function (tierId, planKey) {
   selectedTier = tierId;
@@ -317,7 +291,6 @@ document.addEventListener("DOMContentLoaded", () => {
   resetCalculation();
   configAndCostSection.classList.remove("d-none");
 
-  // User can now freely input their desired number
   countInput.disabled = false;
   countInput.value = 1; // default
   countLabel.textContent = `Enter number of ${current.plural} to track`;
@@ -332,7 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const option = document.createElement("option");
       option.value = device.value;
       option.dataset.cost = device.cost;
-      option.textContent = `${device.name} ($${device.cost.toFixed(2)} one-time)`;
+      option.textContent = `${device.name} (SAR$${device.cost.toFixed(2)} one-time)`;
       deviceTypeSelect.appendChild(option);
     });
   }
@@ -354,9 +327,9 @@ document.addEventListener("DOMContentLoaded", () => {
       monthly = currentPlan.rate + extra * (currentPlan.perUserAddOn || 0);
     } else if (planKey === "business") monthly = count * currentPlan.rate;
 
-    document.getElementById("monthly-cost").textContent = `$${monthly.toFixed(2)}`;
-    document.getElementById("hardware-cost").textContent = `$${hardware.toFixed(2)}`;
-    document.getElementById("total-cost").textContent = `$${(monthly + hardware).toFixed(2)}`;
+    document.getElementById("monthly-cost").textContent = `SAR${monthly.toFixed(2)}`;
+    document.getElementById("hardware-cost").textContent = `SAR${hardware.toFixed(2)}`;
+    document.getElementById("total-cost").textContent = `SAR${(monthly + hardware).toFixed(2)}`;
 
     costOutput.classList.remove("d-none");
     costCalculated = true;

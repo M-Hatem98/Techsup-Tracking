@@ -480,6 +480,27 @@ nav {
     align-items: center
 }
 
+.bg-breadcrumb.vehicle {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/Vehicle\ Tracking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-breadcrumb.people {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/People\ Tracking.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-breadcrumb.animals {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/pet\ teacking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-breadcrumb.equipments {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/Equipment\ Tracking.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media (min-width: 992px) {
     .bg-breadcrumb {
         padding: 140px 0 60px 0;
@@ -693,3 +714,33 @@ nav {
     color: var(--bs-primary);
 }
 /*** Footer End ***/
+
+/***  Register Page Start  ***/
+
+   .subscribe-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+      }
+
+      .form-floating > label {
+        color: #6c757d;
+      }
+
+      .sub-header {
+        font-weight: 600;
+        color: var(--bs-primary);
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 2px solid var(--bs-primary);
+        display: inline-block;
+      }
+
+      .summary-box {
+        background-color: #f1f5fb;
+        border-left: 4px solid var(--bs-primary);
+      }
+
+/***  Register Page  End***/

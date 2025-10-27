@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Subscribe Business | Techsup Tracking</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="container-fluid position-relative p-0">
+      <nav
+        class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+      >
+        <a href="index.html" class="navbar-brand p-0">
+          <img src="img/logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div class="container-fluid bg-breadcrumb">
+      <div class="container text-center py-5" style="max-width: 900px">
+        <h4
+          class="text-white display-5 mb-4 wow fadeInDown"
+          data-wow-delay="0.1s"
+        >
+          Subscribe to the Service
+        </h4>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="container my-5 wow fadeInUp" data-wow-delay="0.2s">
+      <h3 class="text-center text-primary fw-bold mb-4">
+        Subscribe to the service
+      </h3>
+
+      <p class="fw-semibold mb-3">
+        Subscription Type:
+        <span class="text-info" id="subscriptionType">Business</span>
+      </p>
+
+      <div class="row">
+        <!-- Sidebar Summary -->
+        <div class="col-lg-3 mb-4 mb-lg-0">
+          <div class="bg-light p-3 rounded-3 h-100">
+            <h5 class="fw-bold text-primary mb-3">Summary</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <i class="bi bi-check-circle text-primary me-2"></i>Subscribe
+                Type
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle text-primary me-2"></i>Subscribe
+                Cost
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle text-primary me-2"></i>Device
+                Details
+              </li>
+              <li class="mb-0">
+                <i class="bi bi-check-circle text-primary me-2"></i>Total Cost
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Main Form -->
+        <div class="col-lg-9">
+          <form class="row g-3">
+            <div class="col-md-6 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="estNameArabic"
+                placeholder="Name of the establishment in Arabic"
+              />
+              <label for="estNameArabic"
+                >Name of the establishment in Arabic</label
+              >
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="estNameEnglish"
+                placeholder="Name of the establishment in English"
+              />
+              <label for="estNameEnglish"
+                >Name of the establishment in English</label
+              >
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="establishmentID"
+                placeholder="Establishment ID"
+              />
+              <label for="establishmentID"
+                >Establishment ID issued by the Ministry of Interior</label
+              >
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="commercialNum"
+                placeholder="Commercial Registration Number"
+              />
+              <label for="commercialNum">Commercial Registration Number</label>
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="activityType"
+                placeholder="Type of Activity"
+              />
+              <label for="activityType">Type of Activity</label>
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="taxNumber"
+                placeholder="Tax Number"
+              />
+              <label for="taxNumber">Tax Number</label>
+            </div>
+
+            <p class="fw-bold mt-3 text-primary">Descriptive Address</p>
+
+            <div class="col-md-6 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="streetName"
+                placeholder="Street Name"
+              />
+              <label for="streetName">Street Name</label>
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="neighborhood"
+                placeholder="Name of the Neighborhood"
+              />
+              <label for="neighborhood">Name of the Neighborhood</label>
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="postalCode"
+                placeholder="Postal Code"
+              />
+              <label for="postalCode">Postal Code</label>
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="propertyNumber"
+                placeholder="Property Number"
+              />
+              <label for="propertyNumber">Property Number</label>
+            </div>
+
+            <div class="col-md-4 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="subscriptionFee"
+                placeholder="Subscription Fee"
+              />
+              <label for="subscriptionFee">Subscription Fee</label>
+            </div>
+
+            <div class="col-md-4 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="discount"
+                placeholder="Discount"
+              />
+              <label for="discount">Discount</label>
+            </div>
+
+            <div class="col-md-4 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="priceAfter"
+                placeholder="Price After Discount"
+              />
+              <label for="priceAfter">Price After Discount</label>
+            </div>
+
+            <div
+              class="d-flex justify-content-between align-items-center mt-4 flex-wrap gap-3"
+            >
+              <a href="index.html" class="btn btn-outline-secondary px-4 py-2"
+                >Go to Home</a
+              >
+              <button
+                type="submit"
+                class="btn btn-primary rounded-pill px-5 py-2"
+              >
+                Continue
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger px-4 py-2"
+                onclick="window.close()"
+              >
+                Exit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div
+      class="container-fluid overflow-hidden footer pt-5 wow fadeIn"
+      data-wow-delay="0.2s"
+    >
+      <div
+        class="container py-5 border-start-0 border-end-0"
+        style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08)"
+      >
+        <div class="row g-5">
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="footer-item">
+              <img src="img/logo.png" width="150px" alt="Logo" />
+              <div class="d-flex align-items-center mt-2">
+                <i class="fa fa-phone-alt text-primary me-3"></i>
+                <p class="text-white mb-0">+966 920015409</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-envelope text-primary me-3"></i>
+                <p class="text-white mb-0">info@techsupbusiness.com</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                <p class="text-white mb-0">
+                  12 Cerecon - 4th Floor - Office No. 403, Olaya St, Riyadh
+                  12241, Saudi Arabia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div class="footer-item">
+              <h4 class="text-white mb-4">Services</h4>
+              <a href="people tracking.html"
+                ><i class="fas fa-angle-right me-2"></i> People Tracking</a
+              >
+              <a href="animal tracking.html"
+                ><i class="fas fa-angle-right me-2"></i> Animal Tracking</a
+              >
+              <a href="vehicle tracking.html"
+                ><i class="fas fa-angle-right me-2"></i> Vehicle Tracking</a
+              >
+              <a href="equipment tracking.html"
+                ><i class="fas fa-angle-right me-2"></i> Equipment Tracking</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div class="footer-item">
+              <h4 class="text-white mb-4">Resources</h4>
+              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About</a>
+              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i> Terms of Use</a>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <div class="footer-item">
+              <h4 class="text-white mb-4">Follow us on social media</h4>
+              <div class="d-flex">
+                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"
+                  ><i class="fab fa-facebook-f text-white"></i
+                ></a>
+                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"
+                  ><i class="fab fa-twitter text-white"></i
+                ></a>
+                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"
+                  ><i class="fab fa-instagram text-white"></i
+                ></a>
+                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"
+                  ><i class="fab fa-linkedin-in text-white"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom pt-3">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="footer-copy-right text-center">
+              <p>
+                Techsup Tracking ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

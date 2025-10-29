@@ -344,15 +344,38 @@ document.addEventListener("DOMContentLoaded", () => {
     checkContinueButton();
   }
 
-  function checkContinueButton() {
-    continueButton.disabled = !(selectedTier && costCalculated);
-    continueButton.classList.toggle("btn-primary", !continueButton.disabled);
-    continueButton.classList.toggle("btn-secondary", continueButton.disabled);
+  // function checkContinueButton() {
+  //   continueButton.disabled = !(selectedTier && costCalculated);
+  //   continueButton.classList.toggle("btn-primary", !continueButton.disabled);
+  //   continueButton.classList.toggle("btn-secondary", continueButton.disabled);
 
-    if (!continueButton.disabled) {
-      continueButton.onclick = () => (window.location.href = "signin.html");
-    }
+  //   if (!continueButton.disabled) {
+  //     continueButton.onclick = () => (window.location.href = "signin.html");
+  //   }
+  // }
+
+  function checkContinueButton() {
+  continueButton.disabled = !(selectedTier && costCalculated);
+  continueButton.classList.toggle("btn-primary", !continueButton.disabled);
+  continueButton.classList.toggle("btn-secondary", continueButton.disabled);
+
+  if (!continueButton.disabled) {
+    continueButton.onclick = () => {
+      const planKey =
+        selectedPlan === "individual" ? selectedScope : selectedPlan;
+
+      if (["individual", "family", "single"].includes(planKey)) {
+        window.location.href = "register.html";
+      } else if (planKey === "business") {
+        window.location.href = "subscribe-business.html";
+      } else {
+        // fallback (optional)
+        window.location.href = "register.html";
+      }
+    };
   }
+}
+
 
   window.goToHome = () => (window.location.href = "index.html");
 

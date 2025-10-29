@@ -744,3 +744,38 @@ nav {
       }
 
 /***  Register Page  End***/
+
+/*** Login Page Start  ***/
+    #login .login-card {
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        padding: 2.5rem 2rem;
+        width: 100%;
+        max-width: 450px;
+        animation: fadeInUp 0.8s ease-in-out;
+      }
+
+      #login .login-card h3 {
+        font-weight: 700;
+      }
+
+      #login .form-floating > label {
+        right: 1rem;
+        left: auto;
+      }
+
+      #login .form-control {
+        text-align: right;
+      }
+
+
+      #login .login-links a {
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      #login .login-links a:hover {
+        text-decoration: underline;
+      }
+/*** Login Page End  ***/

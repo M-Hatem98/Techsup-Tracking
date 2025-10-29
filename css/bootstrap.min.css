@@ -163,7 +163,7 @@ a {
 }
 
 a:hover {
-    color: #00a66a
+    color: #F99F00
 }
 
 a:not([href]):not([class]),

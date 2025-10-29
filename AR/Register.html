@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <title>الاشتراك | تتبع تكسب</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="../img/favicon.ico" />
+    
+    <style>
+      .form-floating > label {
+        right: 1rem;
+        left: auto;
+      }
+      .form-control {
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid position-relative p-0">
+       <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+          <img src="../img/logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav me-auto py-0">
+            <a href="index.html" class="nav-item nav-link">الرئيسية</a>
+            <a href="about.html" class="nav-item nav-link">من نحن</a>
+            <a href="service.html" class="nav-item nav-link">الخدمات</a>
+            <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                <span class="dropdown-toggle">المنتجات</span>
+              </a>
+              <div class="dropdown-menu m-0 text-end">
+                <a href="people tracking.html" class="dropdown-item">تتبع الأشخاص</a>
+                <a href="animal tracking.html" class="dropdown-item">تتبع الحيوانات</a>
+                <a href="vehicle tracking.html" class="dropdown-item">تتبع المركبات</a>
+                <a href="equipment tracking.html" class="dropdown-item">تتبع المعدات</a>
+              </div>
+            </div>
+            <a href="../service.html" class="nav-item nav-link"><img src="../img/en.svg" alt="English"></a>
+          </div>
+          <a href="#" class="btn btn-primary rounded-pill py-2 px-4 my-3 me-5 my-lg-0 flex-shrink-0">تسجيل الدخول</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container-fluid bg-breadcrumb">
+      <div class="container text-center py-5" style="max-width: 900px">
+        <h4 class="text-white display-5 mb-4 wow fadeInDown" data-wow-delay="0.1s">
+          الاشتراك في الخدمة
+        </h4>
+      </div>
+    </div>
+
+    <div class="container my-5 wow fadeInUp" data-wow-delay="0.2s">
+      <h3 class="text-center text-primary fw-bold mb-4">نموذج الاشتراك في الخدمة</h3>
+
+      <p class="fw-semibold mb-3">
+        نوع الاشتراك:
+        <span class="text-info" id="subscriptionType">فردي</span>
+      </p>
+
+      <div class="row">
+        <div class="col-lg-3 mb-4 mb-lg-0">
+          <div class="bg-light p-3 rounded-3 h-100">
+            <h5 class="fw-bold text-primary mb-3">الملخص</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><i class="bi bi-check-circle text-primary ms-2"></i>نوع الاشتراك</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary ms-2"></i>تكلفة الاشتراك</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary ms-2"></i>تفاصيل الجهاز</li>
+              <li class="mb-0"><i class="bi bi-check-circle text-primary ms-2"></i>إجمالي التكلفة</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <form class="row g-3">
+            <div class="col-md-6 form-floating">
+              <input type="text" class="form-control" id="arabicName" placeholder="الاسم بالعربية" />
+              <label for="arabicName">الاسم بالعربية</label>
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input type="text" class="form-control" id="englishName" placeholder="الاسم بالإنجليزية" />
+              <label for="englishName">الاسم بالإنجليزية</label>
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input type="text" class="form-control" id="idNum" placeholder="رقم الهوية" />
+              <label for="idNum">رقم الهوية</label>
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input type="date" class="form-control" id="expireDate" placeholder="تاريخ الانتهاء" />
+              <label for="expireDate">تاريخ الانتهاء</label>
+            </div>
+
+            <p class="fw-bold mt-4 mb-1">العنوان الوصفي</p>
+
+            <div class="col-md-6 form-floating">
+              <input type="text" class="form-control" id="streetName" placeholder="اسم الشارع" />
+              <label for="streetName">اسم الشارع</label>
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input type="text" class="form-control" id="neighborhood" placeholder="اسم الحي" />
+              <label for="neighborhood">اسم الحي</label>
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input type="text" class="form-control" id="postalCode" placeholder="الرمز البريدي" />
+              <label for="postalCode">الرمز البريدي</label>
+            </div>
+
+            <div class="col-md-6 form-floating">
+              <input type="text" class="form-control" id="propertyNum" placeholder="رقم العقار" />
+              <label for="propertyNum">رقم العقار</label>
+            </div>
+
+            <div class="col-md-4 form-floating">
+              <input type="text" class="form-control" id="subscriptionFee" placeholder="رسوم الاشتراك" />
+              <label for="subscriptionFee">رسوم الاشتراك</label>
+            </div>
+
+            <div class="col-md-4 form-floating">
+              <input type="text" class="form-control" id="discount" placeholder="الخصم" />
+              <label for="discount">الخصم</label>
+            </div>
+
+            <div class="col-md-4 form-floating">
+              <input type="text" class="form-control" id="priceAfter" placeholder="السعر بعد الخصم" />
+              <label for="priceAfter">السعر بعد الخصم</label>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <a href="index.html" class="btn btn-outline-secondary px-4 py-2">العودة للرئيسية</a>
+              <a href="subscribe-business-ar.html" class="btn btn-primary rounded-pill px-5 py-2">استمرار</a>
+              <button type="button" class="btn btn-danger px-4 py-2">خروج</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div
+      class="container-fluid overflow-hidden footer pt-5 wow fadeIn"
+      data-wow-delay="0.2s"
+    >
+      <div
+        class="container py-5 border-start-0 border-end-0"
+        style="border: 1px solid rgba(255, 255, 255, 0.08)"
+      >
+        <div class="row g-5 text-md-end">
+          <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp">
+            <div class="footer-item">
+              <img src="../img/logo.png" width="150px" alt="شعار الشركة" />
+              <div class="d-flex align-items-center mt-2">
+                <i class="fa fa-phone-alt text-primary ms-3"></i>
+                <p class="text-white mb-0">+966 920015409</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-envelope text-primary ms-3"></i>
+                <p class="text-white mb-0">info@techsupbusiness.com</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-map-marker-alt text-primary ms-3"></i>
+                <p class="text-white mb-0">
+                  12 سيركون - الطابق الرابع - المكتب رقم 403، شارع العليا،
+                  الرياض، المملكة العربية السعودية.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp">
+            <div class="footer-item">
+              <h4 class="text-white mb-4">خدماتنا</h4>
+              <a href="people-tracking.html"
+                ><i class="fas fa-angle-left ms-2"></i> تتبع الأشخاص</a
+              >
+              <a href="animal-tracking.html"
+                ><i class="fas fa-angle-left ms-2"></i> تتبع الحيوانات</a
+              >
+              <a href="vehicle-tracking.html"
+                ><i class="fas fa-angle-left ms-2"></i> تتبع المركبات</a
+              >
+              <a href="equipment-tracking.html"
+                ><i class="fas fa-angle-left ms-2"></i> تتبع المعدات</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp">
+            <div class="footer-item">
+              <h4 class="text-white mb-4">روابط مهمة</h4>
+              <a href="about.html"
+                ><i class="fas fa-angle-left ms-2"></i> من نحن</a
+              >
+              <a href="contact.html"
+                ><i class="fas fa-angle-left ms-2"></i> تواصل معنا</a
+              >
+              <a href="#"
+                ><i class="fas fa-angle-left ms-2"></i> سياسة الخصوصية</a
+              >
+              <a href="#"
+                ><i class="fas fa-angle-left ms-2"></i> شروط الاستخدام</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp">
+            <div class="footer-item">
+              <h4 class="text-white mb-4">تابعنا على مواقع التواصل</h4>
+              <div class="d-flex justify-content-md-start">
+                <a
+                  class="btn btn-primary text-white btn-sm-square rounded-circle ms-3"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-primary text-white btn-sm-square rounded-circle ms-3"
+                  href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-primary text-white btn-sm-square rounded-circle ms-3"
+                  href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-primary text-white btn-sm-square rounded-circle ms-3"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom pt-3">
+        <div class="text-center">
+          <p class="mb-0 text-white">
+            جميع الحقوق محفوظة لـ © Techsup Tracking
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+  <!-- Floating Social Toggle Button -->
+  <div class="social-toggle" id="socialToggle">
+    <i class="fas fa-share-alt"></i>
+  </div>
+
+  <!-- Social Sidebar -->
+  <div class="social-sidebar hidden" id="socialSidebar">
+    <ul>
+      <li><a class="btn btn-primary" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a class="btn btn-primary" href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a class="btn btn-primary" href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a class="btn btn-primary" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a class="btn btn-primary" href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/waypoints/waypoints.min.js"></script>
+  <script src="../lib/counterup/counterup.min.js"></script>
+  <script src="../lib/lightbox/js/lightbox.min.js"></script>
+  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
